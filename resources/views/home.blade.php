@@ -13,7 +13,6 @@
             <li><a href="{{ route('home') }}">Home</a></li>
             <li><a href="{{ route('about') }}">About us</a></li>
             <li><a href="{{ route('contact') }}">Contatti</a></li>
-            
         </ul>
     </nav>
 </body>

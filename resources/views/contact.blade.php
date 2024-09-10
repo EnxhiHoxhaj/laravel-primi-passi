@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>sono contact</h1>
+    <h1>Contact</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ route('home') }}">Home</a></li>
+            <li><a href="{{ route('about') }}">About us</a></li>
+            <li><a href="{{ route('contact') }}">Contatti</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
