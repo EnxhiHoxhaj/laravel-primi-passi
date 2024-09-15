@@ -10,7 +10,7 @@
 <div class="container">
         <div class="row justify-content-between">
             <div class="col-3">
-            <h1>HOME PAGE</h1>
+            <h1>{{$title}}</h1>
             </div>
             <div class="col-3">
                 <nav>
@@ -20,6 +20,15 @@
                         <li><a href="{{ route('contact') }}">Contatti</a></li>
                     </ul>
                 </nav>
+                <div class="container">
+                    <h3>{{$hello_word}}</h3>
+                    <span>my favorite TV series are</span>
+                    <ul>
+                        @foreach($tv_series as $serie)
+                        <li>{{$serie}}</li>
+                        @endforeach
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

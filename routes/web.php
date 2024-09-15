@@ -14,7 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'title'=> 'Home Page',
+        'hello_word'=> 'Welcome to my first Laravel project',
+        'tv_series'=> ['Game of Thrones', 'The Witcher', 'Dark', 'Breaking Bad', 'Lost', 'Friends'],
+    ];
+    return view('home', $data);
 })->name('home');
 
 Route::get('/about', function () {
